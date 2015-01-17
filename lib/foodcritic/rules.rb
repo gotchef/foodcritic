@@ -9,12 +9,11 @@
 #   query only, as any nodes returned from a `recipe` block will be converted
 #   into warnings.
 
-rule 'FC001',
-     'Use strings in preference to symbols to access node attributes' do
-  tags %w(style attributes)
-  recipe do |ast|
-    attribute_access(ast, type: :symbol)
-  end
+rule "FC001", "Use symbols in preference to strings to access node attributes" do
+ tags %w{style attributes jt}
+ recipe do |ast|
+  attribute_access( ast, :type => :string )
+ end
 end
 
 rule 'FC002', 'Avoid string interpolation where not required' do
