@@ -5,9 +5,10 @@ Food Critic is a lint tool for Chef cookbooks. It requires Ruby 1.9.3+.
 # Rule Modifications 
 This fork's main intention is to deviate from certain rules that the author is not fond of.  
 
-    Modified Rules
+**Modified Rules**
+
     FC001: Use strings in preference to symbols to access node attributes
-        Prefer symbols instead
+        * Prefer symbols instead
 
 # Homepage
 [http://acrmp.github.com/foodcritic/](http://acrmp.github.com/foodcritic/)
